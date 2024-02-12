@@ -1353,6 +1353,16 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact .row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
 .contact .info-box {
   color: #444444;
   text-align: center;
@@ -1381,7 +1391,7 @@ section {
   margin-bottom: 0;
 }
 
-.contact .php-email-form {
+/* .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px;
 }
@@ -1459,7 +1469,7 @@ section {
 
 .contact .php-email-form button[type="submit"]:hover {
   background: #ff5e31;
-}
+} */
 
 @keyframes animate-loading {
   0% {
